@@ -1,12 +1,14 @@
 // TASK 1
-function processArray(arr) {
-    return arr.map(num => {
-        if (num % 2 === 0) {
-            return num * num;
+function processArray(numbers) {
+    return numbers.map(number => {
+        if (number % 2 === 0) {
+            return number * number;
         } else {
-            return num * 3;
+            return number * 3;
         }
     });
 }
 
-module.exports = processArray;
+module.exports = {
+    processArray
+};
